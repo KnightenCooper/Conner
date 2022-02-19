@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 330 portfolio</title>
+    <link rel="stylesheet" href="/css/styles.css">
+  </head>
+  <body>
+
+    <h1>Partial Documentation Virtual Assistant DEMO</h1>
+    <p>by Knighten Cooper</p>
+    <br>
+
+        <!-- Each of these is a different activity, that when tapped has a dropdown, the first one is 'Board Game:' -->
+    <button class="dropdown-btn">Board Game: 
+      <i class="arrow down"></i>
+    </button>
+    <div class="dropdown-container">
+      <input class="input" type="text" placeholder="name of board game" id="name_of_board_game">
+      <br>
+      <button id="add_text" onClick="add_board_game()" class="submit"> Submit Board Game Text</button>
+      <br>
+        </div>
+    <br>
+    <button class="dropdown-btn">Meal: 
+      <i class="arrow down"></i>
+    </button>
+    <div class="dropdown-container">
+      <select id="meal_time" class = "select" placeholder="Select the Meal">
+        <option value="breakfast">breakfast</option>
+        <option value="lunch">lunch</option>
+        <option value="dinner">dinner</option>
+        <option value="a snack">snack</option>
+      </select>
+
+      <input class="input" type="text" placeholder="Write name of food here" id="name">
+      <textarea rows="5" class="input" type="text" placeholder="Write how you helped Conner here" id="cooking_process"></textarea>
+      <br>
+      <button id="add_text" onClick="meal()" class="submit"> Submit Meal Text</button>
+        </div>
+    <br>
+    <button class="dropdown-btn">Winter Walk: 
+      <i class="arrow down"></i>
+    </button>
+    <div class="dropdown-container">
+      <button id="add_text" onClick="walk()" class="submit"> Submit Walk Text</button>
+        </div>
+    <br>
+    <button class="dropdown-btn">Shower: 
+      <i class="arrow down"></i>
+    </button>
+    <div class="dropdown-container">
+      <button id="add_text" onClick="shower()" class="submit"> Submit Shower Text</button>
+        </div>
+
+    <button class="dropdown-btn">Drive to Park: 
+      <i class="arrow down"></i>
+    </button>
+    <div class="dropdown-container">
+      <input class="input" type="text" placeholder="name of park" id="name_of_park">
+      <br>
+      <button id="add_text" onClick="add_drive_park()" class="submit"> Submit Drive Park Text</button>
+      <br>
+    </div>
+    <br>
+    <button class="dropdown-btn">Go Home: 
+      <i class="arrow down"></i>
+    </button>
+    <div class="dropdown-container">
+      <button id="add_text" onClick="go_home()" class="submit"> Submit Go Home Text</button>
+        </div>
+    <br>
+    <button class="dropdown-btn">Lake Springfield: 
+      <i class="arrow down"></i>
+    </button>
+    <div class="dropdown-container">
+      <button id="add_text" onClick="lake_springfield()" class="submit"> Submit Go Lake Springfield Text</button>
+        </div>
+    <br>
+    <button class="dropdown-btn">Bass Pro Museum: 
+      <i class="arrow down"></i>
+    </button>
+    <div class="dropdown-container">
+      <button id="add_text" onClick="bass_pro_museum()" class="submit"> Submit Bass Pro Museum Text</button>
+        </div>
+    <br>
+    <button class="dropdown-btn">Pet Store: 
+      <i class="arrow down"></i>
+    </button>
+    <div class="dropdown-container">
+      <button id="add_text" onClick="pet_store()" class="submit"> Submit Pet Store Text</button>
+        </div>
+    <br>
+    <button class="dropdown-btn">Puzzle: 
+      <i class="arrow down"></i>
+    </button>
+    <div class="dropdown-container">
+      <button id="add_text" onClick="puzzle()" class="submit"> Submit puzzle Text</button>
+        </div>
+    <br>
+    <button class="dropdown-btn">Grocery Store: 
+      <i class="arrow down"></i>
+    </button>
+    <div class="dropdown-container">
+      <button id="add_text" onClick="grocery_store()" class="submit"> Submit Grocery Store Text</button>
+        </div>
+    <br>
+    <button class="dropdown-btn">General Driven Outing: 
+      <i class="arrow down"></i>
+    </button>
+    <div class="dropdown-container">
+      <input class="input" type="text" placeholder="destination" id="destination">
+      <input class="input" type="text" placeholder="what did you do there..." id="activity_at_destination">
+      <br>
+      <button id="add_text" onClick="general_outing()" class="submit"> Submit General Outing Text</button>
+      <br>
+    </div>
+    <br>
+    <button class="dropdown-btn">Custom:
+      <i class="arrow down"></i>
+    </button>
+    <div class="dropdown-container">
+      <textarea rows="5" class="input" type="text" placeholder="Write custom text here..." id="custom"></textarea>  
+      <br>
+      <button id="add_text" onClick="custom()" class="submit"> Submit Custom Text</button>      
+    </div> 
+    <br>
+    
+    <div id="documentation_id"></div>
+    <br>
+    <!-- Copy the documentation to the clipboard so it can easily be pasted into the final application -->
+    <button class="copy_text" onclick="copy_documentation()"> Copy Text </button>
+    <!-- Delete all the text documentation that is currently stored in local storage -->
+    <button class="delete_text" onClick="clear_all_text()"> Delete Text </button>
+    <br>
+    <br>
+    <br>
+    <br>
+        
+    <script src="js/button_logic.js"></script>
+    <script src="js/dropdowns.js"></script>
+    <script src="js/copy_documentation.js"></script>
+    <script src="js/nav_bar.js"></script>
+
+</body></html>
+
+
+<!-- Sources:
+  
+  CSS Dropdowns
+https://www.w3schools.com/css/css_dropdowns.asp
+
+Tryit Editor v3.7
+https://www.w3schools.com/css/tryit.asp?filename=trycss_dropdown_button
+
+How To Create a Responsive Navbar with Dropdown
+https://www.w3schools.com/howto/howto_js_responsive_navbar_dropdown.asp
+
+How To Create a Side Navigation Dropdown
+https://www.w3schools.com/howto/howto_js_dropdown_sidenav.asp
+
+Tryit Editor v3.7
+https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_sidenav_dropdown
+
+Tryit Editor v3.7
+https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_responsive_navbar_dropdown
+
+Responsive mobile dropdown navigation using css only | by Kim T | Creative Technology Concepts & Code | Medium
+https://medium.com/creative-technology-concepts-code/responsive-mobile-dropdown-navigation-using-css-only-7218e4498a99
+
+CSS-Only Accessible Dropdown Navigation Menu | Modern CSS Solutions
+https://moderncss.dev/css-only-accessible-dropdown-navigation-menu/
+
+Is there an upside down caret character? - Genera Codice
+https://www.generacodice.com/en/articolo/142527/is-there-an-upside-down-caret-character
+
+javascript onclick dropdown menu examples - Google Search
+https://www.google.com/search?q=javascript+onclick+dropdown+menu+examples&client=opera-gx&hs=kHU&ei=9TcBYvLjDputqtsPpMyVkA4&oq=javascript+onclick+dropdown&gs_lcp=Cgdnd3Mtd2l6EAEYADIFCAAQgAQyBQgAEIAEMgYIABAWEB4yBggAEBYQHjIGCAAQFhAeMgYIABAWEB4yBggAEBYQHjIGCAAQFhAeOgcIABBHELADOggIABAWEAoQHkoECEEYAEoECEYYAFCPGFiNOWDOSmgFcAJ4AIABZogBogmSAQQxMS4ymAEAoAEByAEIwAEB&sclient=gws-wiz
+
+Simulate the Onclick Event in CSS | Delft Stack
+https://www.delftstack.com/howto/css/css-onclick/
+
+In Javascript how to empty an array
+https://www.tutorialspoint.com/in-javascript-how-to-empty-an-array
+
+dom events - How to check whether a Button is clicked by using JavaScript - Stack Overflow
+https://stackoverflow.com/questions/2788191/how-to-check-whether-a-button-is-clicked-by-using-javascript
+
+Call multiple JavaScript functions in onclick event - GeeksforGeeks
+https://www.geeksforgeeks.org/call-multiple-javascript-functions-in-onclick-event/
+
+Element.nextElementSibling - Web APIs | MDN
+https://developer.mozilla.org/en-US/docs/Web/API/Element/nextElementSibling
+
+Building a Better Button in CSS — Cantina
+https://cantina.co/building-a-better-button-in-css/
+
+38 Stylish CSS Buttons For Fashionable Websites 2022 - uiCookies
+https://uicookies.com/css-buttons/
+
+Cool and responsive buttons with a few lines of CSS - Federico Dossena
+https://fdossena.com/?p=html5cool/buttons/i.frag
+
+CSS Buttons
+https://www.w3schools.com/css/css3_buttons.asp
+
+Tryit Editor v3.7
+https://www.w3schools.com/css/tryit.asp?filename=trycss_buttons_basic
+
+How can I apply CSS on all buttons which are present in that page? - Stack Overflow
+https://stackoverflow.com/questions/3540380/how-can-i-apply-css-on-all-buttons-which-are-present-in-that-page
+
+Font-Awesome/all.min.css at master · FortAwesome/Font-Awesome
+https://github.com/FortAwesome/Font-Awesome/blob/master/css/all.min.css
+
+css - Add dropdown arrow indicators to menu items that have submenus only? - Stack Overflow
+https://stackoverflow.com/questions/21190694/add-dropdown-arrow-indicators-to-menu-items-that-have-submenus-only
+
+Edit fiddle - JSFiddle - Code Playground
+http://jsfiddle.net/TL9pK/
+
+How To Create Arrows/Triangles with CSS
+https://www.w3schools.com/howto/howto_css_arrows.asp
+
+Tryit Editor v3.7
+https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_arrows
+
+transform | CSS-Tricks - CSS-Tricks
+https://css-tricks.com/almanac/properties/t/transform/
+
+translateY() - CSS: Cascading Style Sheets | MDN
+https://developer.mozilla.org/en-US/docs/Web/CSS/transform-function/translateY()
+
+css - How do I right align div elements? - Stack Overflow
+https://stackoverflow.com/questions/7693224/how-do-i-right-align-div-elements
+
+CSS outline Property
+https://www.w3schools.com/cssref/pr_outline.asp
+
+css - How to make a div flush with the left margin when inside a Bootstrap container - Stack Overflow
+https://stackoverflow.com/questions/37364039/how-to-make-a-div-flush-with-the-left-margin-when-inside-a-bootstrap-container/37364376
+
+CSS margin-bottom property
+https://www.w3schools.com/cssref/pr_margin-bottom.asp
+
+HTML | <input> align Attribute - GeeksforGeeks
+https://www.geeksforgeeks.org/html-input-align-attribute/
+
+CSS Margin
+https://www.w3schools.com/css/css_margin.asp
+
+Center an element - CSS: Cascading Style Sheets | MDN
+https://developer.mozilla.org/en-US/docs/Web/CSS/Layout_cookbook/Center_an_element
+
+html - How can I do width = 100% - 100px in CSS? - Stack Overflow
+https://stackoverflow.com/questions/899107/how-can-i-do-width-100-100px-in-css
+
+HTML select tag
+https://www.w3schools.com/tags/tag_select.asp
+
+Tryit Editor v3.7
+https://www.w3schools.com/tags/tryit.asp?filename=tryhtml_select
+
+Tryit Editor v3.7
+https://www.w3schools.com/tags/tryit.asp?filename=tryhtml_select
+
+html - How do I make a placeholder for a 'select' box? - Stack Overflow
+https://stackoverflow.com/questions/5805059/how-do-i-make-a-placeholder-for-a-select-box
+
+HTML DOM Form reset() Method
+https://www.w3schools.com/jsref/met_form_reset.asp
+
+Tryit Editor v3.7
+https://www.w3schools.com/jsref/tryit.asp?filename=tryjsref_form_reset
+
+JavaScript DOM HTML
+https://www.w3schools.com/js/js_htmldom_html.asp
+
+Tryit Editor v3.7
+https://www.w3schools.com/js/tryit.asp?filename=tryjs_change_innerhtml
+
+How to Create a Multi-Line Text Input Field In HTML
+https://www.w3docs.com/snippets/html/how-to-create-a-multi-line-text-input-field-in-html.html
+
+How To Copy to Clipboard
+https://www.w3schools.com/howto/howto_js_copy_clipboard.asp
+
+Tryit Editor v3.7
+https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_copy_clipboard
+
+How to Send Texts From a Web Browser in 2 Different Ways
+https://www.businessinsider.com/how-to-send-texts-from-a-web-browser -->
