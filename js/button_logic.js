@@ -69,7 +69,7 @@ var add_drive_park = function() {
   + " At intersections, I asked Conner which way he wanted to go and gestured by pointing both ways. Conner pointed to show where he wanted to go. I supervised Conner during the community outing because he is a flight risk. I guided Conner back to the car. ";
   localStorage.setItem("documentation_key", documentation_text.innerHTML); // update the local storage value so it contains the added park text
 
-  document.getElementById("name_of_board_game").value = ""; // empty all input boxes so user knows it submitted
+  document.getElementById("name_of_park").value = ""; // empty all input boxes so user knows it submitted
 }
 
 //Add "took conner home" to Service Documentation 
@@ -128,12 +128,15 @@ var grocery_store = function() {
 //Add "generic outing" to Service Documentation 
 var general_outing = function() {
   var documentation_text = document.getElementById("documentation_id");// gets the current documentation
-  var destination = document.getElementById("destination").value;// gets the current user input for the park name
-  var activity_at_destination = document.getElementById("activity_at_destination").value;// gets the current user input for the park name
+  var destination = document.getElementById("destination").value;// gets the current user input for the destination name
+  var activity_at_destination = document.getElementById("activity_at_destination").value;// gets the current user input for the what occurred at destination
   // below code adds the additional documentation to the current documentation
   documentation_text.innerHTML = documentation_text.innerHTML + "I asked Conner if he wanted to go to " + destination + ". Conner signed yes. I took Conner to " + destination+ ". " 
   + activity_at_destination + " I supervised Conner during the community outing because he is a flight risk. I guided Conner back to the car.";
   localStorage.setItem("documentation_key", documentation_text.innerHTML); // update the local storage value so it contains the lake springfield text
+
+  document.getElementById("destination").value = ""; // empty all input boxes so user knows it submitted
+  document.getElementById("activity_at_destination").value = ""; // empty all input boxes so user knows it submitted
 }
 
 
