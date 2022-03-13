@@ -1,0 +1,26 @@
+{"namespace":"boardgame","key":"8493461e-1bd0-4a5c-9b9b-8d6817248684","value":0}
+
+{"namespace":"meal","key":"c4496462-07fa-411f-ad14-784d369d9c44","value":0}
+
+{"namespace":"walk","key":"d5093da7-e42f-4fbe-8211-d05b2417ca83","value":0}
+
+{"namespace":"shower","key":"00dfe849-fb32-41d2-b742-5f79d28eeb25","value":0}
+
+{"namespace":"park","key":"a83d4632-7147-4fe6-bba0-b35f3899661d","value":0}
+
+{"namespace":"lakespringfield","key":"9bf3a972-acfc-47f1-aa9c-252b5ec4a2b1","value":0}
+
+{"namespace":"basspro","key":"9e83797f-6142-45c6-957f-698c5c351d06","value":0}
+
+{"namespace":"petstore","key":"3ef80eda-312c-4c3e-8779-44b4955bd7b2","value":0}
+
+{"namespace":"puzzle","key":"5f0ba221-08a4-45de-b249-4a46ae7995f6","value":0}
+
+{"namespace":"grocerystore","key":"8a434f92-3501-489d-9fd4-d1e9e529678f","value":0}
+
+{"namespace":"naturecenter","key":"5e48f9c4-58e1-419d-bf46-cbd86d3cc1ee","value":0}
+
+{"namespace":"carcommunityouting","key":"93010702-a0e4-46a5-a04a-70da6690bf60","value":0}
+
+Use the below link to create new API keys. Replace "demokey" with the name of the key you want to create
+https://api.countapi.xyz/create?namespace=demokey&enable_reset=1

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 330 portfolio</title>
+    <link rel="stylesheet" href="/css/styles.css">
+    <!-- Call Counter API, link to documenation: https://countapi.xyz/#format
+    Link to Video Tutorial for Counter API: https://www.youtube.com/watch?v=WTHrtiMEjk0 -->
+  
+
+  </head>
+  <body>
+    <!-- The bottom navigation bar -->
+    <div class="navbar" id="myNavbar">
+        <a href="index.html">Create Documentation</a>
+        <a href="conner_pick.html">Conner Picks Activity</a>
+        <a href="data.html" class="active">Monthly Data</a>
+        <a href="#about">New Page</a>
+        <a href="#about">New Page</a>
+        <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+      </div>
+
+    <h1>What Conner has done so far this month:</h1>
+    <h2>made by Knighten Cooper</h2>
+
+     <!-- Link to Generate new counter variables: https://api.countapi.xyz/create?namespace=demokey&enable_reset=1
+     replace 'demokey' with desired name -->
+
+     <h1> <span id="board_game"></span> board games.</h1>
+     <h1> <span id="meal"></span> assisted meals.</h1>
+     <h1> <span id="walk"></span> assisted walks.</h1>
+     <h1> <span id="shower"></span> assisted showers.</h1>
+     <h1> <span id="park"></span> trips to park.</h1>
+     <h1> <span id="lake_springfield"></span> trips to lake springfield.</h1>
+     <h1> <span id="bass_pro"></span> trips to bass pro musuem.</h1>
+     <h1> <span id="pet_store"></span> trips to pet stores.</h1>
+     <h1> <span id="puzzle"></span> assisted puzzle help.</h1>
+     <h1> <span id="grocery_store"></span> trips to the grocery store.</h1>
+     <h1> <span id="nature_center"></span> trips to the nature center.</h1>
+     <h1> <span id="car_community_outing"></span> miscellaneous community outings using a car.</h1>
+
+
+    <button onclick="reset_counter()">Reset Counter</button>
+    <br>
+    <br>
+    <br>
+    <br>
+    
+    <script src="js/data.js">
+    </script>
+
+</body></html>
