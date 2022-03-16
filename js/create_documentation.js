@@ -32,7 +32,7 @@ var meal = function() {
   var meal_time = document.getElementById("meal_time").value; // gets the user input for whether the meal was breakfast, lunch, dinner or a snack
   var cooking_process = document.getElementById("cooking_process").value; // gets the user input for the process the assistant did to help Conner
 // below code adds the additional documentation to the current documentation
-  documentation_text.innerHTML = documentation_text.innerHTML + "I asked Conner is he wanted to eat " + meal_time + ". Conner signed yes. I asked Conner if he wanted to eat " + name + 
+  documentation_text.innerHTML = documentation_text.innerHTML + "I asked Conner if he wanted to eat " + meal_time + ". Conner signed yes. I asked Conner if he wanted to eat " + name + 
   ". Conner signed yes. " + cooking_process + " I encouraged Conner to do his dishes. ";
   localStorage.setItem("documentation_key", documentation_text.innerHTML); // update the local storage value so it contains the added meal text
   document.getElementById("name").value = ""; // empty all input boxes so user knows it submitted
