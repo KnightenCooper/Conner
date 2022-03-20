@@ -1,3 +1,4 @@
+Activities Tracker:
 {"namespace":"boardgame","key":"8493461e-1bd0-4a5c-9b9b-8d6817248684","value":0}
 
 {"namespace":"meal","key":"c4496462-07fa-411f-ad14-784d369d9c44","value":0}
@@ -21,6 +22,9 @@
 {"namespace":"naturecenter","key":"5e48f9c4-58e1-419d-bf46-cbd86d3cc1ee","value":0}
 
 {"namespace":"carcommunityouting","key":"93010702-a0e4-46a5-a04a-70da6690bf60","value":0}
+
+Current Weight:
+{"namespace":"weight","key":"4edf9c29-d410-48fe-bd0d-a29d258d7f38","value":0}
 
 Use the below link to create new API keys. Replace "demokey" with the name of the key you want to create
 https://api.countapi.xyz/create?namespace=demokey&enable_reset=1

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 330 portfolio</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <!-- Call Counter API, link to documenation: https://countapi.xyz/#format
+    Link to Video Tutorial for Counter API: https://www.youtube.com/watch?v=WTHrtiMEjk0 -->
+  
+
+  </head>
+  <body>
+    <!-- The bottom navigation bar -->
+    <div class="navbar" id="myNavbar">
+        <a href="index.html">Create Documentation</a>
+        <a href="conner_pick.html">Conner Picks Activity</a>
+        <a href="data.html">Monthly Data</a>
+        <a href="weight.html" class="active">Weight Tracker</a>
+        <a href="#about">New Page</a>
+        <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+      </div>
+
+    <h1>Conner Weight Tracker:</h1>
+    <h1>Values based on 16 year-old 5'0'' teenage male</h1>
+    <h2>made by Knighten Cooper</h2>
+
+     <!-- Link to Generate new counter variables: https://api.countapi.xyz/create?namespace=demokey&enable_reset=1
+     replace 'demokey' with desired name -->
+
+     <h1>Current Weight: <span id="weight"></span> </h1>
+     <h1>Ideal Weight: 105 </span> </h1>
+     <h1>Healthy Range: 87 - 124</span> </h1>
+
+     Type Current Weight Here: <input type="number" name="a" id="a">
+     <br> 
+     <br> 
+     <button onclick="update_weight(document.getElementById('a'
+     ).value)">Submit</button>
+
+     
+      <!-- Increase weight or set to inputted number
+      set goal weight 
+      check what the requirement docs say -->
+
+    <br>
+    <br>
+    <br>
+    <br>
+    
+    <script src="js/weight.js">
+    </script>
+
+</body></html>
+
+<!-- Sources:
+https://stackoverflow.com/questions/21397743/passing-html-input-value-as-a-javascript-function-parameter
+
+BMI calculator used:
+https://www.cdc.gov/healthyweight/assessing/bmi/adult_bmi/english_bmi_calculator/bmi_calculator.html
+
+https://www.scielo.br/j/jped/a/8SBCtdSChmsSdzgL7R8fBjR/?lang=en#
+https://www.elsevier.es/en-revista-revista-medica-internacional-sobre-el-406-articulo-assessing-down-syndrome-bmi-body-S2171974817300089
+https://alliedhealth.ceconnection.com/files/OvercomingWeightProblemsinAdultsWithDownSyndrome-1403008186813.pdf -->
