@@ -1,6 +1,6 @@
 
 // function for the bottom navigation bar
-function myFunction() {
+function bottom_nav() {
     var x = document.getElementById("myNavbar");
     if (x.className === "navbar") {
       x.className += " responsive";

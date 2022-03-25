@@ -18,11 +18,13 @@
         <a href="data.html" class="active">Monthly Data</a>
         <a href="weight.html">Weight Tracker</a>
         <a href="#about">New Page</a>
-        <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
-      </div>
+      <a class="icon" onclick="bottom_nav()">&#9776;</a>
+    </div>
 
-    <h1>What Conner has done so far this month:</h1>
-    <h2>made by Knighten Cooper</h2>
+    <div class="topbar">
+    <h1 >Activities Conner did this Month:</h1>
+    <p>by Knighten Cooper</p>
+    </div>
 
      <!-- Link to Generate new counter variables: https://api.countapi.xyz/create?namespace=demokey&enable_reset=1
      replace 'demokey' with desired name -->
@@ -41,7 +43,7 @@
      <h1> <span id="car_community_outing"></span> miscellaneous community outings using a car.</h1>
 
 
-    <button onclick="reset_counter()">Reset Counter</button>
+    <button class="submitbutton" onclick="reset_counter()">Tap to Reset All Values to Zero</button>
     <br>
     <br>
     <br>
