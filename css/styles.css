@@ -11,6 +11,42 @@
     color: white; /* Makes the text color of button white when clicked & dropped */
   }
 
+  /* Styling for the data values*/
+  .data {
+    border: none;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 26px;
+    width: calc((100%) - 65px);
+    font-weight: bolder;
+    margin-bottom: 5px;
+    background-color: #ddd;
+  }
+
+  /* Styling for the weight values */
+  .weight {
+    border: none;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 26px;
+    width: calc((100%) - 65px);
+    font-weight: bolder;
+    margin-bottom: 0px;
+  }
+
+  /* Styling for the weight input values */
+  .center {
+    border: none;
+    text-align: center;
+    text-decoration: none;
+    margin-left: auto;
+    margin-left: auto;
+  }
+
   /* Styling for the dropdown buttons */
   .dropdown-btn {
     border: none;
@@ -23,7 +59,6 @@
     width: 100%;
     font-weight: bolder;
     margin-bottom: 5px;
-
   }
 
 /* Create the downwards arrow for the dropdown buttons */
