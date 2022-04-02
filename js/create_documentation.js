@@ -85,7 +85,7 @@ var add_drive_park = function() {
   + " At intersections, I asked Conner which way he wanted to go and gestured by pointing both ways. Conner pointed to show where he wanted to go. I supervised Conner during the community outing because he is a flight risk. I guided Conner back to the car. ";
   localStorage.setItem("documentation_key", documentation_text.innerHTML); // update the local storage value so it contains the added park text
 
-  document.getElementById("name_of_board_game").value = ""; // empty all input boxes so user knows it submitted
+  document.getElementById("name_of_park").value = ""; // empty all input boxes so user knows it submitted
 
   increase_counter("https://api.countapi.xyz/hit/park/a83d4632-7147-4fe6-bba0-b35f3899661d"); // Increase the counter for number assisted meals this month
 }
@@ -103,7 +103,7 @@ var lake_springfield = function() {
   var documentation_text = document.getElementById("documentation_id");// gets the current documentation
   // below code adds the additional documentation to the current documentation
   documentation_text.innerHTML = documentation_text.innerHTML + "I asked Conner if he wanted to go to Lake Springfield. Conner signed yes. I took Conner to Lake Springfield. "
-  + "I walked around with Conner. I held Conner's hand when he went over rocks. I supervised Conner during the community outing because he is a flight risk. I guided Conner back to the car.";
+  + "I walked around with Conner. I held Conner's hand when he went over rocks. I supervised Conner during the community outing because he is a flight risk. I guided Conner back to the car. ";
   localStorage.setItem("documentation_key", documentation_text.innerHTML); // update the local storage value so it contains the lake springfield text
 
   increase_counter("https://api.countapi.xyz/hit/lakespringfield/9bf3a972-acfc-47f1-aa9c-252b5ec4a2b1"); // Increase the counter for number assisted trips to lake this month
@@ -114,7 +114,7 @@ var bass_pro_museum = function() {
   var documentation_text = document.getElementById("documentation_id"); // gets the current documentation
   // below code adds the additional documentation to the current documentation
   documentation_text.innerHTML = documentation_text.innerHTML + "I asked Conner if he wanted to go to Bass Pro Shops Museum. Conner signed yes. I took Conner to Bass Pro Shops Museum. "
-  + "I walked around with Conner while he looked at the fish and displays. I supervised Conner during the community outing because he is a flight risk. I guided Conner back to the car.";
+  + "I walked around with Conner while he looked at the fish and displays. I supervised Conner during the community outing because he is a flight risk. I guided Conner back to the car. ";
   localStorage.setItem("documentation_key", documentation_text.innerHTML); // update the local storage value so it contains the lake springfield text
 
   increase_counter("https://api.countapi.xyz/hit/basspro/9e83797f-6142-45c6-957f-698c5c351d06"); // Increase the counter for number assisted trips to bass pro museum this month
@@ -125,7 +125,7 @@ var pet_store = function() {
   var documentation_text = document.getElementById("documentation_id");// gets the current documentation
   // below code adds the additional documentation to the current documentation
   documentation_text.innerHTML = documentation_text.innerHTML + "I asked Conner if he wanted to go to the pet store. Conner signed yes. I took Conner to the pet store. "
-  + "I walked around with Conner. I supervised Conner while he watched the fish and other pets because he is a flight risk. I guided Conner back to the car.";
+  + "I walked around with Conner. I supervised Conner while he watched the fish and other pets because he is a flight risk. I guided Conner back to the car. ";
   localStorage.setItem("documentation_key", documentation_text.innerHTML); // update the local storage value so it contains the lake springfield text
 
   increase_counter("https://api.countapi.xyz/hit/petstore/3ef80eda-312c-4c3e-8779-44b4955bd7b2"); // Increase the counter for number assisted trip to pet store this month
@@ -136,7 +136,7 @@ var puzzle = function() {
   var documentation_text = document.getElementById("documentation_id");// gets the current documentation
   // below code adds the additional documentation to the current documentation
   documentation_text.innerHTML = documentation_text.innerHTML + "I asked Conner if he wanted to work on a puzzle. Conner signed yes. I got out a puzzle and helped Conner find pieces. "
-  + "Whenever I found a piece, I gave it to Conner and pointed to where he needed to put it.";
+  + "Whenever I found a piece, I gave it to Conner and pointed to where he needed to put it. ";
   localStorage.setItem("documentation_key", documentation_text.innerHTML); // update the local storage value so it contains the lake springfield text
 
   increase_counter("https://api.countapi.xyz/hit/puzzle/5f0ba221-08a4-45de-b249-4a46ae7995f6"); // Increase the counter for number assisted help with puzzle this month
@@ -147,7 +147,7 @@ var grocery_store = function() {
   var documentation_text = document.getElementById("documentation_id");// gets the current documentation
   // below code adds the additional documentation to the current documentation
   documentation_text.innerHTML = documentation_text.innerHTML + "I asked Conner if he wanted to go for a drive to buy groceries. Conner signed yes. I took Conner to the grocery store. "
-  + "I helped Conner find items and I paid. Conner scanned everything at the self-checkout. I supervised Conner during the community outing because he is a flight risk. I guided Conner back to the car.";
+  + "I helped Conner find items and I paid. Conner scanned everything at the self-checkout. I supervised Conner during the community outing because he is a flight risk. I guided Conner back to the car. ";
   localStorage.setItem("documentation_key", documentation_text.innerHTML); // update the local storage value so it contains the lake springfield text
 
   increase_counter("https://api.countapi.xyz/hit/grocerystore/8a434f92-3501-489d-9fd4-d1e9e529678f"); // Increase the counter for number assisted trips to grocery store this month
@@ -159,7 +159,7 @@ var nature_center = function() {
   // below code adds the additional documentation to the current documentation
   documentation_text.innerHTML = documentation_text.innerHTML + "I asked Conner if he wanted to go to the Nature Center. Conner signed yes. I took Conner to the Nature Center." + 
   " I walked around with Conner. At intersections, I encouraged Conner to point in the direction he wanted to go. I supervised Conner during the community outing because he is a" + 
-  " flight risk. I guided Conner back to the car.";
+  " flight risk. I guided Conner back to the car. ";
   localStorage.setItem("documentation_key", documentation_text.innerHTML); // update the local storage value so it contains the nature center text
 
   increase_counter("https://api.countapi.xyz/hit/naturecenter/5e48f9c4-58e1-419d-bf46-cbd86d3cc1ee"); // Increase the counter for number assisted trips to nature center this month
@@ -172,7 +172,9 @@ var general_outing = function() {
   var activity_at_destination = document.getElementById("activity_at_destination").value;// gets the current user input for the destination name
   // below code adds the additional documentation to the current documentation
   documentation_text.innerHTML = documentation_text.innerHTML + "I asked Conner if he wanted to go to " + destination + ". Conner signed yes. I took Conner to " + destination+ ". " 
-  + activity_at_destination + " I supervised Conner during the community outing because he is a flight risk. I guided Conner back to the car.";
+  + activity_at_destination + " I supervised Conner during the community outing because he is a flight risk. I guided Conner back to the car. ";
+  document.getElementById("destination").value = ""; // empty all input boxes so user knows it submitted
+
   localStorage.setItem("documentation_key", documentation_text.innerHTML); // update the local storage value so it contains the lake springfield text
 
   increase_counter("https://api.countapi.xyz/hit/carcommunityouting/93010702-a0e4-46a5-a04a-70da6690bf60"); // Increase the counter for number assisted meals this month
