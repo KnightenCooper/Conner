@@ -1,6 +1,6 @@
-Software hosted on GitHub Pages that provides individuals working as Personal Assistants a means to speed up the process of creating service documentation.
-Personal Assistants work for individuals with developmental disabilities and are required by for the Missouri Division of Developmental Disabilities to create documentation after each shift. 
-Service documentation provides proof to funders of what services were performed, and helps track the progress and changes of behavior of the disabled individual.
+# Software hosted on GitHub Pages that provides individuals working as Personal Assistants a means to speed up the process of creating service documentation.
+# Personal Assistants work for individuals with developmental disabilities and are required by for the Missouri Division of Developmental Disabilities to create documentation after each shift. 
+# Service documentation provides proof to funders of what services were performed, and helps track the progress and changes of behavior of the disabled individual.
 # Overview
 
 My name is Knighten Cooper and I am studying to be a software engineer. I am currently working as a Personal Assistant to an individual with a developmental disability. Every time I clock in and out, I have to create service documentation that details what I did, and what the disabled individual did.
