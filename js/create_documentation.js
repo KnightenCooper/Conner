@@ -174,6 +174,7 @@ var general_outing = function() {
   documentation_text.innerHTML = documentation_text.innerHTML + "I asked Conner if he wanted to go to " + destination + ". Conner signed yes. I took Conner to " + destination+ ". " 
   + activity_at_destination + " I supervised Conner during the community outing because he is a flight risk. I guided Conner back to the car. ";
   document.getElementById("destination").value = ""; // empty all input boxes so user knows it submitted
+  document.getElementById("activity_at_destination").value = ""; // empty all input boxes so user knows it submitted
 
   localStorage.setItem("documentation_key", documentation_text.innerHTML); // update the local storage value so it contains the lake springfield text
 
