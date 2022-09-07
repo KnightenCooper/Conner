@@ -165,6 +165,27 @@ var nature_center = function() {
   increase_counter("https://api.countapi.xyz/hit/naturecenter/5e48f9c4-58e1-419d-bf46-cbd86d3cc1ee"); // Increase the counter for number assisted trips to nature center this month
 }
 
+//Add "took conner to the library" to Service Documentation 
+var library = function() {
+  var documentation_text = document.getElementById("documentation_id");// gets the current documentation
+  // below code adds the additional documentation to the current documentation
+  documentation_text.innerHTML = documentation_text.innerHTML + "I asked Conner if he wanted to go to the library. Conner signed yes. I took Conner to the library." + 
+  " I walked around with Conner. I encouraged Conner to point in the direction he wanted to go to find books. I helped Conner carry the books he selected. I helped Conner checkout his books."
+  + " I supervised Conner during the community outing because he is a" + 
+  " flight risk. I guided Conner back to the car. ";
+  localStorage.setItem("documentation_key", documentation_text.innerHTML); // update the local storage value so it contains the nature center text
+
+}
+
+//Add "conner used bathroom" to Service Documentation 
+var bathroom = function() {
+  var documentation_text = document.getElementById("documentation_id");// gets the current documentation
+  // below code adds the additional documentation to the current documentation
+  documentation_text.innerHTML = documentation_text.innerHTML + "I asked Conner if he needed to use the bathroom. Conner signed yes. I waited for Conner to finish using the bathroom." 
+  +" I made sure Conner washed his hands with soap after Conner used the bathroom.";
+  localStorage.setItem("documentation_key", documentation_text.innerHTML); // update the local storage value so it contains the nature center text
+}
+
 //Add "generic outing" to Service Documentation 
 var general_outing = function() {
   var documentation_text = document.getElementById("documentation_id");// gets the current documentation
