@@ -182,7 +182,7 @@ var bathroom = function() {
   var documentation_text = document.getElementById("documentation_id");// gets the current documentation
   // below code adds the additional documentation to the current documentation
   documentation_text.innerHTML = documentation_text.innerHTML + "I asked Conner if he needed to use the bathroom. Conner signed yes. I waited for Conner to finish using the bathroom." 
-  +" I made sure Conner washed his hands with soap after Conner used the bathroom.";
+  +" I made sure Conner washed his hands with soap after Conner used the bathroom. ";
   localStorage.setItem("documentation_key", documentation_text.innerHTML); // update the local storage value so it contains the nature center text
 }
 
